@@ -1,4 +1,3 @@
-'use strict'  
 const path = require('path');  
 const express = require('express');  
 const bodyParser = require('body-parser');  
@@ -19,5 +18,14 @@ app.get('/test', function(req, res) {
     res.status(200);
     res.json({ one: 1, two: 2 });
 });
+
+app.get('/env', (req,res) => {
+    res.status(200);
+    res.json(global.environment)
+})
+
+if (global.environment === 'node') {
+    app.listen(3000, () => console.log('Listening on port 3000.'))
+}
 
 module.exports = app;  
