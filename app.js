@@ -3,6 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');  
 const cors = require('cors');
 
+const constants = require('./constants');
+
 const app = express();
 
 app.use(cors());  
@@ -24,7 +26,7 @@ app.get('/env', (req,res) => {
     res.json(global.environment)
 })
 
-if (global.environment === 'node') {
+if (global.environment === constants.NODE) {
     app.listen(3000, () => console.log('Listening on port 3000.'))
 }
 
