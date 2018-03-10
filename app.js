@@ -10,14 +10,14 @@ app.use(cors());
 app.use(bodyParser.json());  
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function(req, res) {  
+app.get('/hello', function(req, res) {  
     res.status(200);
-    res.send('Hello world');
+    res.json('Hello world');
 });
 
 app.get('/test', function(req, res) {  
     res.status(200);
-    res.send('test');
+    res.json({ one: 1, two: 2 });
 });
 
 module.exports = app;  
