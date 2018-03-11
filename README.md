@@ -19,6 +19,7 @@ You'll want to set up an API Gateway for this as well, but that's beyond the cur
 
 1. `git clone http://github.com/jpdillingham/aws-lambda-express-bare-bones`
 2. `cd aws-lambda-express-bare-bones`
-3. `node index.js`
+3. `npm install`
+4. `node index.js`
 
 The default port is 3000.
