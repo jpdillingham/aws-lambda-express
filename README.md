@@ -4,7 +4,7 @@ This is a bare-bones, bare minimum implementation of an AWS Lambda script using 
 
 I previously tried the official AWS Labs example and was unable to get it to work, so I made this.
 
-# Deploying to Lambda
+## Deploying to Lambda
 
 Note: ensure that git and npm/node are installed.
 
@@ -15,7 +15,7 @@ Note: ensure that git and npm/node are installed.
 
 You'll want to set up an API Gateway for this as well, but that's beyond the current scope.
 
-# Running Locally
+## Running Locally
 
 1. `git clone http://github.com/jpdillingham/aws-lambda-express-bare-bones`
 2. `cd aws-lambda-express-bare-bones`
